@@ -1,0 +1,80 @@
+<html>
+    <body>
+        <script src="promises.js">
+        /*Template strings
+            var nome = 'Abrahão';
+            var conteudo = 
+            `meu nome é ${nome}
+
+            `;
+
+            console.log(conteudo);
+            */
+
+
+        /* Block scopes
+        {
+           //Dividindo por escopos 
+            let nome = 'Poyó';
+            let testes = function()
+            {
+            console.log(`Dentro do escopo fica: ${nome}`);
+                
+            }
+            testes();
+        }
+            testes();     
+        
+        */
+         
+        /* Arrow Functions
+         const testes = (texto,par)=>
+         {
+            par(texto);
+         }
+
+         //Callback
+        testes('Olá mundo!',(texto)=>
+        {
+            alert(texto);
+        });
+        */
+        
+        /*Destructure
+        const arr = ['aa','aaa','aaaa'.'aaaaa','aaaaaa','aaaaaaa'];
+        
+        const [a,b,...c] = arr;
+        alert(c[2]);
+
+        */
+
+        /*Spread
+        var nomes = [
+            {
+            nome: 'João'
+            },
+            {
+                nome: 'Poyó'
+            },
+            {
+                nome: 'SIIIIIIIIIIIIIIIIIIIIIIIIIU'
+            }
+    
+        ];
+        const objetos =[...nomes,{
+            nome: 'Abrahão'
+        }];
+        console.log(objetos);   
+        */
+
+        /*Rest
+        function testes(...nomes)
+        {
+            console.log(nomes);
+        }
+
+        testes(1,2,3,4,5,6);
+        */
+        </script>
+    </body>
+</html>

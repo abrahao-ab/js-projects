@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <script>
+            /* Receita de bolo para AJAX
+            setTimeout(() => {
+            //Requisição AJAX
+            var request = new XMLHttpRequest();
+            request.open('GET','https://jsonplaceholder.typicode.com/todos/1',true);
+
+            //Função ao carregar
+            request.onload = function()
+            {
+                if(this.status >= 200 && this.status < 400)
+                {
+                    //Sucesso
+                    var data = JSON.parse(this.response);
+                    console.log(data);
+                }
+                else
+                {
+                    //Erro
+                    request.onerror();
+                }
+            }
+            //Função deu erro
+            request.onerror = function()
+            {
+                console.log('deu ruim viu');
+            }
+
+            request.send();
+            }, 2000);
+            */
+        
+        //Faz o mesmo que o escrito acima, receita de bolo, mas com fetch
+        fetch('https://jsonplaceholder.typicode.com/posts',
+        {
+            method:'POST',
+            body: JSON.stringify
+            ({
+                title:'Danki Code',
+                body:'meu conteúdo',
+                userId: 10
+            }),
+            headers:{
+                    'Content-Type': 'application/json; charset=UTF-8'
+            },
+        }).then(response=> response.json())
+            .then(json=>console.log(json));
+        
+           
+
+        </script>
+    </body>
+</html>
